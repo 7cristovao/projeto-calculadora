@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora em JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fundo">
+    <section class="calculadora">
+        <table>
+            <tr>
+                <div id="visor"></div>
+            </tr>
+            <tr>
+            <div id="separador"></div>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="off" value="OFF" onclick="desligar()" class="botao">
+                </td> 
+                <td>
+                    <input type="button" id="sete" value="7" onclick="entrada('7')" class="botao">
+                </td>
+                <td>
+                    <input type="button" id="oito" value="8" onclick="entrada('8')" class="botao">
+                </td>
+                <td>
+                    <input type="button" id="nove" value="9" onclick="entrada('9')" class="botao">
+                </td> 
+                <td>
+                    <input type="button" id="multiplicar" value="×" onclick="multiplicar()" class="botao">
+                </td> 
+                <td>
+                    <input type="button" id="dividir" value="÷" onclick="dividir()" class="botao">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="limpar" value="CE" onclick="limpar()" class="botao">
+                </td>
+                <td>  
+                <input type="button" id="quatro" value="4" onclick="entrada('4')" class="botao">
+                </td>
+                <td>
+                    <input type="button" id="cinco" value="5" onclick="entrada('5')" class="botao">
+                </td>
+                <td>
+                <input type="button" id="seis" value="6" onclick="entrada('6')" class="botao">
+                </td> 
+                <td>
+                    <input type="button" id="subtrair" value="-" onclick="subtrair()" class="botao">
+                </td> 
+                <td>
+                    <input type="button" id="somar" value="+" onclick="somar()" class="botao">
+                </td> 
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <input type="button" id="on" value="ON" onclick="ligar()" class="botao">
+                </td>
+                <td>
+                    <input type="button" id="um" value="1" onclick="entrada('1')" class="botao">
+                </td>
+                <td>
+                    <input type="button" id="dois" value="2" onclick="entrada('2')" class="botao">
+                </td>
+                <td>
+                    <input type="button" id="tres" value="3" onclick="entrada('3')" class="botao">
+                </td>
+                <td colspan="2">
+                    <input type="button" id="enter" value="ENT" onclick="enter()" class="botao">
+                </td>
+            </tr> 
+            <tr>  
+                <td colspan="2">
+                    <input type="button" id="zero" value="0" onclick="entrada('0')" class="botao">
+                </td> 
+                <td>
+                    <input type="button" id="ponto" value="." onclick="entrada('.')" class="botao">
+                </td>   
+                <td colspan="2">
+                    <input type="button" id="igual" value="=" onclick="clicarCalcular()" class="botao">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <footer id="output"></footer>
+</body>
+<script src="script.js"></script>
+</html>
